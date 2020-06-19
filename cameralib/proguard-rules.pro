@@ -83,7 +83,20 @@
 #support
 -keep class android.support.** { *; }
 -keep interface android.support.** { *; }
+
 -keep class com.bonade.xfh.sdk.**{*;}
+-keep class com.kernal.lisence.**{*;}
+-keep class kernal.sun.misc.**{*;}
+-keep class org.bouncycastle.**{*;}
+-keep class com.kernal.imageprocessor.**{*;}
+-keep class com.wintone.**{*;}
+-keep class org.kobjects.**{*;}
+-keep class org.ksoap2.**{*;}
+-keep class org.kxml2.**{*;}
+-keep class org.xmlpull.**{*;}
+
+
+
 -dontwarn android.support.**
 #保持类中的所有方法名
 -keepclassmembers class * {

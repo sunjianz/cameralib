@@ -210,6 +210,7 @@ public class CardsCameraActivity extends AppCompatActivity implements IScanRetur
             imageButton_ejct_params = new RelativeLayout.LayoutParams((int) (height * 0.05), (int) (height * 0.5));
             imageButton_ejct_params.addRule(RelativeLayout.ALIGN_PARENT_RIGHT, R.id.camera_layout);
             imageButton_ejct_params.addRule(RelativeLayout.CENTER_VERTICAL);
+            imageButton_ejct.setVisibility(View.GONE);
 
         } else {
             //竖屏状态下框的方向 true:width>height; false:height>width
@@ -255,6 +256,7 @@ public class CardsCameraActivity extends AppCompatActivity implements IScanRetur
             imageButton_ejct_params = new RelativeLayout.LayoutParams((int) (width * 0.5), (int) (width * 0.05));
             imageButton_ejct_params.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM, R.id.camera_layout);
             imageButton_ejct_params.addRule(RelativeLayout.CENTER_HORIZONTAL);
+            imageButton_ejct.setVisibility(View.GONE);
         }
         relativeLayout.addView(scanICamera, new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
         relativeLayout.addView(imageButton_flash, imageButton_flash_params);
